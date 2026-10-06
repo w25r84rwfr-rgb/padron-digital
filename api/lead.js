@@ -32,7 +32,7 @@ export default async function handler(req, res) {
   }
 
   const allowedPlans = new Set([
-    'Website Build — $350 one-time',
+    'Website Build — $499 one-time',
     'Website + Care — $49.99/month'
   ]);
   if (!allowedPlans.has(plan)) return res.status(400).json({ error: 'Please choose a valid package.' });
